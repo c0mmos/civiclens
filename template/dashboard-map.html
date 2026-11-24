@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Full Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link" href="dashboard-overview.html">Overview</a>
+          <a class="side-link active" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link" href="dashboard-profile.html">Profile</a>
+          <a class="side-link" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left"><button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button><div class="search-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="search-input" type="text" placeholder="Search by report title" /></div></div>
+          <div class="topbar-right"><button class="icon-btn" aria-label="Notifications">🔔</button><div class="avatar-chip"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div></div>
+        </div>
+        <div class="content-shell">
+          <div class="block-title"><div><div class="kicker">Locate issues</div><h2>Full map view</h2></div><div class="inline-actions"><button class="btn btn-outline">Filters</button><button class="btn btn-primary">Export</button></div></div>
+          <div class="row-2">
+            <div class="panel">
+              <div class="filter-row" style="margin-bottom: 18px;">
+                <button class="filter-chip active">All</button>
+                <button class="filter-chip">Roads</button>
+                <button class="filter-chip">Waste</button>
+                <button class="filter-chip">Lighting</button>
+              </div>
+              <div class="mini-list">
+                <div class="item"><span>Damaged Road Near Central Park</span><span class="badge status-open">Open</span></div>
+                <div class="item"><span>Broken Streetlights on Oak Avenue</span><span class="badge status-pending">Pending</span></div>
+                <div class="item"><span>Waste Accumulation Near Riverside</span><span class="badge status-inprogress">In Progress</span></div>
+                <div class="item"><span>Water Leakage on Main Street</span><span class="badge status-resolved">Resolved</span></div>
+              </div>
+            </div>
+            <div class="panel"><div id="map" style="height: 560px;"></div></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="main-nav">
+      <div class="container nav-inner">
+        <a href="index.html" class="brand"><span class="brand-mark">C</span><span>CivicLens</span></a>
+        <nav class="main-menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="login.html" class="btn btn-outline">Sign in</a>
+          <a href="signup.html" class="btn btn-primary">Join now</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="kicker">Civic engagement platform</div>
+            <h1>Make Your City a Better Place.</h1>
+            <p>CivicLens helps residents report damaged roads, broken lighting, overflowing waste, and quality-of-life issues while keeping city teams accountable through transparent updates and progress tracking.</p>
+            <div class="hero-actions">
+              <a href="signup.html" class="btn btn-primary btn-lg">Report an Issue</a>
+              <a href="#map-preview" class="btn btn-secondary btn-lg">Explore the Map</a>
+            </div>
+            <div class="hero-meta">
+              <span><strong>48k+</strong> issue reports</span>
+              <span><strong>92%</strong> satisfaction</span>
+              <span><strong>3x</strong> faster response</span>
+            </div>
+          </div>
+          <div class="map-preview" id="map-preview">
+            <div class="map-canvas"></div>
+            <span class="map-pin pin-a"></span>
+            <span class="map-pin pin-amber pin-b"></span>
+            <span class="map-pin pin-c"></span>
+            <span class="map-pin pin-red pin-d"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <div class="label">Total Reports</div>
+            <div class="value">18,420</div>
+            <div class="trend">+12.4% this quarter</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Resolved Issues</div>
+            <div class="value">12,680</div>
+            <div class="trend">+8.1% month over month</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Active Issues</div>
+            <div class="value">3,540</div>
+            <div class="trend">166 require urgent review</div>
+          </div>
+          <div class="stat-card">
+            <div class="label">Registered Citizens</div>
+            <div class="value">74,890</div>
+            <div class="trend">+1,240 new users</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">Community leaders</div>
+            <h2>Most active contributors</h2>
+          </div>
+          <div class="card" style="padding: 8px 24px 0;">
+            <ul class="leaderboard-list">
+              <li class="leaderboard-item">
+                <div class="leaderboard-user">
+                  <div class="avatar">AR</div>
+                  <div>
+                    <strong>Ana Rivera</strong><br>
+                    <span class="text-muted">142 verified reports</span>
+                  </div>
+                </div>
+                <span class="badge status-open">1st</span>
+              </li>
+              <li class="leaderboard-item">
+                <div class="leaderboard-user">
+                  <div class="avatar">MS</div>
+                  <div>
+                    <strong>Marcus Stone</strong><br>
+                    <span class="text-muted">126 reports this year</span>
+                  </div>
+                </div>
+                <span class="badge status-pending">2nd</span>
+              </li>
+              <li class="leaderboard-item">
+                <div class="leaderboard-user">
+                  <div class="avatar">LN</div>
+                  <div>
+                    <strong>Lina Noor</strong><br>
+                    <span class="text-muted">119 neighborhood updates</span>
+                  </div>
+                </div>
+                <span class="badge status-inprogress">3rd</span>
+              </li>
+              <li class="leaderboard-item">
+                <div class="leaderboard-user">
+                  <div class="avatar">DT</div>
+                  <div>
+                    <strong>David Tran</strong><br>
+                    <span class="text-muted">96 community alerts</span>
+                  </div>
+                </div>
+                <span class="badge status-resolved">4th</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">How it works</div>
+            <h2>Report issues. Track progress. Make a difference.</h2>
+          </div>
+          <div class="steps">
+            <div class="step-box">
+              <div class="step-number">1</div>
+              <h3>Report an Issue</h3>
+              <p class="text-muted">Residents can log potholes, broken lights, garbage overflow, and damaged public spaces through a guided form.</p>
+            </div>
+            <div class="step-box">
+              <div class="step-number">2</div>
+              <h3>Track Its Progress</h3>
+              <p class="text-muted">Each report is mapped and connected to a service workflow with visible updates from city teams.</p>
+            </div>
+            <div class="step-box">
+              <div class="step-number">3</div>
+              <h3>Make a Difference</h3>
+              <p class="text-muted">Better coordination helps cities address service gaps before they affect safety, health, and trust.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">Recent reports</div>
+            <h2>Issues being addressed across the city</h2>
+          </div>
+          <div class="issue-grid">
+            <article class="issue-card">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80" alt="Damaged road" />
+              <div class="meta"><span>Roads</span><span class="badge status-open">Open</span></div>
+              <h3>Damaged Road Near Central Park</h3>
+              <p>Large cracks and a deep pothole near the park entrance remain unsafe for cyclists and pedestrians.</p>
+            </article>
+            <article class="issue-card">
+              <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=900&q=80" alt="Broken streetlights" />
+              <div class="meta"><span>Lighting</span><span class="badge status-pending">Pending</span></div>
+              <h3>Broken Streetlights on Oak Avenue</h3>
+              <p>Four streetlights have been out for more than a week, creating visibility concerns after sunset.</p>
+            </article>
+            <article class="issue-card">
+              <img src="https://images.unsplash.com/photo-1528747045269-390fe33c19f2?auto=format&fit=crop&w=900&q=80" alt="Waste accumulation" />
+              <div class="meta"><span>Waste</span><span class="badge status-inprogress">In Progress</span></div>
+              <h3>Waste Accumulation Near Riverside</h3>
+              <p>Overflowing bins and illegal dumping have created sanitation issues in a high-traffic public area.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="section-header">
+            <div class="kicker">Benefits</div>
+            <h2>Balanced tools for citizens and city teams</h2>
+          </div>
+          <div class="feature-list">
+            <div class="feature">
+              <div class="icon">📍</div>
+              <h3>Transparent reporting</h3>
+              <p class="text-muted">Each issue is mapped, tracked, and reviewed with clear ownership and public status updates.</p>
+            </div>
+            <div class="feature">
+              <div class="icon">⚙️</div>
+              <h3>Faster coordination</h3>
+              <p class="text-muted">Staff can prioritize urgent safety risks, assign crews, and share updates with residents.</p>
+            </div>
+            <div class="feature">
+              <div class="icon">🤝</div>
+              <h3>Stronger trust</h3>
+              <p class="text-muted">When communities see action, civic confidence grows and neighborhood engagement improves.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm">
+        <div class="container">
+          <div class="newsletter">
+            <div class="section-header" style="margin-bottom: 18px;">
+              <div class="kicker">Get involved</div>
+              <h2>Help build a safer, cleaner city.</h2>
+            </div>
+            <div class="inline-actions">
+              <a href="signup.html" class="btn btn-primary btn-lg">Become a Citizen Reporter</a>
+              <a href="contact.html" class="btn btn-outline btn-lg">Contact the Team</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand"><span class="brand-mark">C</span><span>CivicLens</span></a>
+      <p class="text-muted" style="margin-top: 16px; max-width: 320px;">A civic technology platform helping communities report local issues and track improvements with transparency.</p>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>hello@civiclens.org</li>
+        <li>+1 (415) 222-6400</li>
+        <li>245 Harbor Ave, San Francisco</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

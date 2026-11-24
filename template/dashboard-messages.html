@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Messages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link" href="dashboard-overview.html">Overview</a>
+          <a class="side-link" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link" href="dashboard-profile.html">Profile</a>
+          <a class="side-link active" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left"><button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button><div class="search-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="search-input" type="text" placeholder="Search conversations" /></div></div>
+          <div class="topbar-right"><button class="icon-btn" aria-label="Notifications">🔔</button><div class="avatar-chip"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div></div>
+        </div>
+        <div class="content-shell">
+          <div class="block-title"><div><div class="kicker">Communication</div><h2>Messages</h2></div></div>
+          <div class="row-2">
+            <div class="message-list">
+              <div class="message-item active"><div class="avatar">LS</div><div><strong>Lena Stone</strong><br><span class="text-muted">Road repair follow-up</span></div></div>
+              <div class="message-item"><div class="avatar">DK</div><div><strong>Daniel Kim</strong><br><span class="text-muted">Streetlight crew update</span></div></div>
+              <div class="message-item"><div class="avatar">RC</div><div><strong>Rita Chen</strong><br><span class="text-muted">Waste collection timing</span></div></div>
+            </div>
+            <div class="chat-panel">
+              <div class="block-title"><h3>Lena Stone</h3><span class="badge status-resolved">Online</span></div>
+              <div class="chat-window">
+                <div class="msg-row"><div class="msg-bubble">Hi Elena, we have received the road damage report near Central Park and the crew will begin repairs tomorrow morning.</div></div>
+                <div class="msg-row right"><div class="msg-bubble">Great. Please keep the resident update posted as soon as inspection is complete.</div></div>
+                <div class="msg-row"><div class="msg-bubble">Absolutely. We also flagged the shallow area near the west entrance for added safety barriers.</div></div>
+              </div>
+              <div class="msg-compose"><input class="form-control" type="text" placeholder="Type a message" /><button class="btn btn-primary">Send</button></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

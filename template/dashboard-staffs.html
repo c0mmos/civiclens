@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Staffs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link" href="dashboard-overview.html">Overview</a>
+          <a class="side-link" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link active" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link" href="dashboard-profile.html">Profile</a>
+          <a class="side-link" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left"><button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button><div class="search-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="search-input" type="text" placeholder="Search staff" /></div></div>
+          <div class="topbar-right"><button class="icon-btn" aria-label="Notifications">🔔</button><div class="avatar-chip"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div></div>
+        </div>
+        <div class="content-shell">
+          <div class="block-title"><div><div class="kicker">People</div><h2>Staff members</h2></div><button class="btn btn-primary">+ Add staff</button></div>
+          <div class="table-panel">
+            <div class="table-wrap">
+              <table class="table">
+                <thead><tr><th>Staff</th><th>Email</th><th>Department</th><th>Assigned requests</th><th>Availability</th></tr></thead>
+                <tbody>
+                  <tr><td><div class="leaderboard-user"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div></td><td>elena@civiclens.org</td><td>Operations</td><td>12</td><td><span class="badge status-open">Available</span></td></tr>
+                  <tr><td><div class="leaderboard-user"><div class="avatar">DT</div><div><strong>Daniel Tran</strong><br><span class="text-muted">Infrastructure Coordinator</span></div></div></td><td>daniel@civiclens.org</td><td>Infrastructure</td><td>9</td><td><span class="badge status-pending">On call</span></td></tr>
+                  <tr><td><div class="leaderboard-user"><div class="avatar">RA</div><div><strong>Rosa Allen</strong><br><span class="text-muted">Waste Services Manager</span></div></div></td><td>rosa@civiclens.org</td><td>Sanitation</td><td>14</td><td><span class="badge status-inprogress">Active</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+  </head>
+  <body>
+    <div class="auth-shell">
+      <div class="auth-card">
+        <div class="brand" style="margin-bottom: 8px;"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <h2>Welcome back</h2>
+        <p class="text-muted">Access your account and continue managing community reports.</p>
+        <form style="margin-top: 20px;">
+          <div class="form-block"><label>Email or username</label><input class="form-control" type="text" value="elena@civiclens.org" /></div>
+          <div class="form-block">
+            <label>Password</label>
+            <div style="position: relative;">
+              <input id="login-password" class="form-control" type="password" value="password123" />
+              <button type="button" data-password-toggle="login-password" class="btn btn-outline" style="position:absolute; right: 8px; top: 50%; transform: translateY(-50%); padding: .48rem .74rem;">Show</button>
+            </div>
+          </div>
+          <div class="checkbox-row" style="margin-bottom: 18px;"><input type="checkbox" checked /> <span>Remember me</span></div>
+          <button class="btn btn-primary" style="width: 100%;" type="button">Log in</button>
+        </form>
+        <div class="form-note"><a href="forgot-password.html" class="auth-link">Forgot password?</a></div>
+        <div class="form-note">New to CivicLens? <a href="signup.html" class="auth-link">Create an account</a></div>
+      </div>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

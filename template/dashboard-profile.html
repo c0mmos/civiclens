@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link" href="dashboard-overview.html">Overview</a>
+          <a class="side-link" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link active" href="dashboard-profile.html">Profile</a>
+          <a class="side-link" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left"><button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button><div class="search-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="search-input" type="text" placeholder="Search profile details" /></div></div>
+          <div class="topbar-right"><button class="icon-btn" aria-label="Notifications">🔔</button><div class="avatar-chip"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div></div>
+        </div>
+        <div class="content-shell">
+          <div class="block-title"><div><div class="kicker">Account</div><h2>Profile</h2></div><button class="btn btn-primary">Edit profile</button></div>
+          <div class="dash-row">
+            <div class="panel">
+              <div class="leaderboard-user" style="margin-bottom: 16px;"><div class="avatar avatar-lg">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div>
+              <ul class="mini-list">
+                <li class="item"><span>Username</span><span>elena.adams</span></li>
+                <li class="item"><span>Email</span><span>elena@civiclens.org</span></li>
+                <li class="item"><span>Phone</span><span>+1 (415) 822-1847</span></li>
+                <li class="item"><span>Address</span><span>1705 Harbor Blvd</span></li>
+                <li class="item"><span>Joined</span><span>May 2023</span></li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="block-title"><h3>Change password</h3></div>
+              <form>
+                <div class="form-block"><label>Current password</label><input class="form-control" type="password" value="oldpassword" /></div>
+                <div class="form-block"><label>New password</label><input class="form-control" type="password" value="newpassword" /></div>
+                <button class="btn btn-primary" type="button">Update password</button>
+              </form>
+            </div>
+          </div>
+          <div class="panel" style="margin-top: 24px;">
+            <div class="block-title"><h3>Account activity summary</h3></div>
+            <div class="dashboard-grid">
+              <div class="stat-mini"><div class="top"><span>Reports reviewed</span><span class="badge status-resolved">98%</span></div><h4>382</h4></div>
+              <div class="stat-mini"><div class="top"><span>Updates posted</span><span class="badge status-open">14</span></div><h4>94</h4></div>
+              <div class="stat-mini"><div class="top"><span>Open queues</span><span class="badge status-pending">6</span></div><h4>24</h4></div>
+              <div class="stat-mini"><div class="top"><span>Response rate</span><span class="badge status-inprogress">95%</span></div><h4>4.2d</h4></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

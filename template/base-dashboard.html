@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> ... </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link active" href="dashboard-overview.html">Overview</a>
+          <a class="side-link" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link" href="dashboard-profile.html">Profile</a>
+          <a class="side-link" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left">
+            <button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button>
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <input class="search-input" type="text" placeholder="Search reports, staff, or articles" />
+            </div>
+          </div>
+          <div class="topbar-right">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <div class="avatar-chip">
+              <div class="avatar">EA</div>
+              <div>
+                <strong>Elena Adams</strong><br>
+                <span class="text-muted">Operations Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-shell">
+          {% block content %}{% endblock %}
+        </div>
+      </main>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>

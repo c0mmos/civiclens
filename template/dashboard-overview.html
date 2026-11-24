@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CivicLens | Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../statics/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="sidebar open">
+        <div class="brand"><span class="brand-mark">C</span><span>CivicLens</span></div>
+        <div class="nav-section">
+          <a class="side-link active" href="dashboard-overview.html">Overview</a>
+          <a class="side-link" href="dashboard-map.html">Full Map</a>
+          <a class="side-link" href="dashboard-requests.html">Requests</a>
+          <a class="side-link" href="dashboard-staffs.html">Staffs</a>
+          <a class="side-link" href="dashboard-profile.html">Profile</a>
+          <a class="side-link" href="dashboard-messages.html">Messages</a>
+          <a class="side-link" href="dashboard-blog.html">Blog</a>
+        </div>
+      </aside>
+      <main class="dashboard-main">
+        <div class="topbar">
+          <div class="topbar-left">
+            <button class="icon-btn" data-toggle="sidebar" aria-label="Toggle sidebar">☰</button>
+            <div class="search-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21L16.65 16.65M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><input class="search-input" type="text" placeholder="Search reports, staff, or articles" /></div>
+          </div>
+          <div class="topbar-right">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <div class="avatar-chip"><div class="avatar">EA</div><div><strong>Elena Adams</strong><br><span class="text-muted">Operations Lead</span></div></div>
+          </div>
+        </div>
+        <div class="content-shell">
+          <div class="block-title"><div><div class="kicker">Dashboard</div><h2>Welcome back, Elena</h2></div><a href="dashboard-requests.html" class="btn btn-primary">Create new request</a></div>
+          <div class="dashboard-grid">
+            <div class="stat-mini"><div class="top"><span>Total Requests</span><span class="badge status-open">Live</span></div><h4>2,481</h4></div>
+            <div class="stat-mini"><div class="top"><span>Pending</span><span class="badge status-pending">12%</span></div><h4>344</h4></div>
+            <div class="stat-mini"><div class="top"><span>In Progress</span><span class="badge status-inprogress">28%</span></div><h4>718</h4></div>
+            <div class="stat-mini"><div class="top"><span>Resolved</span><span class="badge status-resolved">60%</span></div><h4>1,419</h4></div>
+          </div>
+          <div class="dash-row">
+            <div class="chart-panel">
+              <div class="block-title"><h3>Reports activity</h3><span class="text-muted">Last 6 months</span></div>
+              <div class="chart-large"><canvas data-chart data-chart-type="line" data-label="Reports" data-labels='["Jan","Feb","Mar","Apr","May","Jun"]' data-values='[120,136,118,150,168,182]' data-border="#14b8a6" data-fill="rgba(20,184,166,0.18)" data-fillbool="true"></canvas></div>
+            </div>
+            <div class="panel">
+              <div class="block-title"><h3>Quick actions</h3></div>
+              <div class="mini-list">
+                <div class="item"><span>New report</span><span class="badge status-open">Open</span></div>
+                <div class="item"><span>Escalate priority</span><span class="badge status-pending">Review</span></div>
+                <div class="item"><span>Assign crew</span><span class="badge status-inprogress">Queue</span></div>
+                <div class="item"><span>Publish update</span><span class="badge status-resolved">Ready</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-row">
+            <div class="table-panel">
+              <div class="block-title"><h3>Recent requests</h3><a href="dashboard-requests.html" class="auth-link">View all</a></div>
+              <div class="table-wrap">
+                <table class="table">
+                  <thead><tr><th>Title</th><th>Category</th><th>Status</th><th>Due</th></tr></thead>
+                  <tbody>
+                    <tr><td>Damaged Road Near Central Park</td><td>Infrastructure</td><td><span class="badge status-open">Open</span></td><td>2 days</td></tr>
+                    <tr><td>Broken Streetlights on Oak Avenue</td><td>Lighting</td><td><span class="badge status-pending">Pending</span></td><td>4 days</td></tr>
+                    <tr><td>Waste Accumulation Near Riverside</td><td>Sanitation</td><td><span class="badge status-inprogress">In Progress</span></td><td>1 day</td></tr>
+                    <tr><td>Water Leakage on Main Street</td><td>Utilities</td><td><span class="badge status-resolved">Resolved</span></td><td>Done</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="block-title"><h3>Recent activity</h3></div>
+              <div class="feed-list">
+                <div class="feed-item"><div class="avatar">AK</div><div><strong>Ashok Khan</strong><div class="text-muted">Updated status for Water Leakage on Main Street.</div></div></div>
+                <div class="feed-item"><div class="avatar">LM</div><div><strong>Lina Mendez</strong><div class="text-muted">Submitted a new road damage report near Greenview.</div></div></div>
+                <div class="feed-item"><div class="avatar">TR</div><div><strong>Tom Rivera</strong><div class="text-muted">Assigned two new maintenance technicians to the Oak Avenue lighting issue.</div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="dash-row">
+            <div class="panel map-wrap">
+              <div class="block-title"><h3>Recent reports map</h3></div>
+              <div id="map"></div>
+            </div>
+            <div class="panel">
+              <div class="block-title"><h3>Field crew status</h3></div>
+              <div class="mini-list">
+                <div class="item"><span>North District</span><span>7 active</span></div>
+                <div class="item"><span>Central District</span><span>5 active</span></div>
+                <div class="item"><span>Harbor District</span><span>3 active</span></div>
+                <div class="item"><span>South District</span><span>9 active</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../statics/js/main.js"></script>
+  </body>
+</html>
